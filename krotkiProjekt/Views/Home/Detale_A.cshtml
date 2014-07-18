@@ -1,0 +1,54 @@
+﻿@model krotkiProjekt.Models.Autor
+
+@{
+    Layout = null;
+    <script src="~/Scripts/jquery-2.1.1.js"></script>
+    ViewBag.id_a = Model.Id_A;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detale_A</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Autor</legend>
+    
+        <div class="display-label">
+             @*@Html.DisplayNameFor(model => model.Imie)*@
+            Imię
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Imie)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Opis)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Opis)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Data_urodzenia)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Data_urodzenia)
+        </div>
+    </fieldset>
+    @*@Html.Partial("Partial_Detale_A");*@
+    <p>
+        @*@Html.ActionLink("Edit", "Edit", new { id=Model.Id_A }) |*@
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+    <script>
+        $(document).ready(function ()
+        {
+            $("#ksiazki").load('/Home/Partial_Detale_A?id_a='+ @ViewBag.id_a);
+        })
+    </script>
+</body>
+</html>
