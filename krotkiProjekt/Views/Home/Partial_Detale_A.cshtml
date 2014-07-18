@@ -6,19 +6,26 @@
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Id_A)
+            @*@Html.DisplayNameFor(model => model.Id_A)*@
+            Nr Autora
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Id_K)
+            @*@Html.DisplayNameFor(model => model.Id_K)*@
+            @Html.Encode("Nr Książki") 
+            @*//normalnie się wyświetla 'string':)*@
+            
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Tytul)
+            @*@Html.DisplayNameFor(model => model.Tytul)*@
+            Tytuł
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Opis)
+            @*@Html.DisplayNameFor(model => model.Opis)*@
+            Opis książki
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Data_wydania)
+            @*@Html.DisplayNameFor(model => model.Data_wydania)*@
+            Data wydania
         </th>
         <th></th>
     </tr>
