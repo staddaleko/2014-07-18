@@ -33,15 +33,15 @@
         </div>
     
         <div class="display-label">
-             @*@Html.DisplayNameFor(model => model.Data_urodzenia)*@
-            Data Urodzenia
+             @Html.DisplayNameFor(model => model.Data_urodzenia)
         </div>
         <div class="display-field">
             @Html.DisplayFor(model => model.Data_urodzenia)
         </div>
     </fieldset>
+    @*@Html.Partial("Partial_Detale_A");*@
     <p>
-        @*@Html.ActionLink("Edit", "Edit", new { id_a=Model.Id_A }) |*@
+        @*@Html.ActionLink("Edit", "Edit", new { id=Model.Id_A }) |*@
         @Html.ActionLink("Back to List", "Index")
     </p>
     <script>

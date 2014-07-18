@@ -138,9 +138,12 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <Content Include="Views\Home\[złe]Index.cshtml" />
+    <Content Include="Views\Home\[złe]Detale_A.cshtml" />
+    <Content Include="Views\Home\[złe]Partial_Detale_A.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Detale_A.cshtml" />
     <Content Include="Views\Home\Partial_Detale_A.cshtml" />
+    <Content Include="Views\Home\Detale_A.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
