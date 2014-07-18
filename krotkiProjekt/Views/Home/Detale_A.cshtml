@@ -26,7 +26,8 @@
         </div>
     
         <div class="display-label">
-             @Html.DisplayNameFor(model => model.Opis)
+             @*@Html.DisplayNameFor(model => model.Opis)*@
+            Nazwisko
         </div>
         <div class="display-field">
             @Html.DisplayFor(model => model.Opis)
@@ -44,6 +45,7 @@
         @*@Html.ActionLink("Edit", "Edit", new { id_a=Model.Id_A }) |*@
         @Html.ActionLink("Back to List", "Index")
     </p>
+    <div id="ksiazki"></div>
     <script>
         $(document).ready(function ()
         {
